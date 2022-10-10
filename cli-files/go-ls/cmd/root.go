@@ -44,13 +44,13 @@ var rootCmd = &cobra.Command{
       if len(os.Args) > 1 {
         args = os.Args[1:]
       }
-    
       for _, arg := range args {
         err := listDirectory(arg)
         if err != nil {
           log.Printf("Not able to list %s, %v\n", arg, err)
         
       }
+      
     } 
     return nil
   },
